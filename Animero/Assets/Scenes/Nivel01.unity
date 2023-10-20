@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 879005432}
   - component: {fileID: 879005431}
   - component: {fileID: 879005430}
+  - component: {fileID: 879005433}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,6 +207,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879005433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879005429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed14a2f2aa7bb641af9f5b9c274e6f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Jugador: {fileID: 1023535213}
+  Adelante: 0.4
+  Suavizado: 2
 --- !u!1 &910694174
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +683,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1476,8 +1492,8 @@ Tilemap:
     m_Data: {fileID: 507991609458048091, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: -4016574229998233168, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -6913125122176552986, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: -4954369765903962290, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
   - m_RefCount: 2
@@ -1504,8 +1520,8 @@ Tilemap:
     m_Data: {fileID: 4639667851638375257, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -7636600680057324653, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -6913125122176552986, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1943651682701173771, guid: ea901f4b7d16bd944b79384d4ec5bcc4, type: 3}
   - m_RefCount: 1
