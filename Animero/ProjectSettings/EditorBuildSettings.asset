@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/VideoIntro.unity
+    path: Assets/Scenes/1.VideoIntro.unity
     guid: 2feb49d97a040e44e84ca83884c7d4c4
   - enabled: 1
-    path: Assets/Scenes/LogoInicio.unity
+    path: Assets/Scenes/2.LogoInicio.unity
     guid: 4e18664ceb67cb64eafa46156722bc60
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/3.Menu.unity
     guid: e8fda2fe836bb1c48b602e8b45256704
   - enabled: 1
-    path: Assets/Scenes/SeleccionNivel.unity
+    path: Assets/Scenes/4.Iniciar partida.unity
     guid: 38209a28cab0ee74ea640b8f664ee94d
   - enabled: 1
-    path: Assets/Scenes/Opciones.unity
+    path: Assets/Scenes/6.Opciones.unity
     guid: c94a567a473a32342a7f619a53db9b87
   - enabled: 1
     path: Assets/Scenes/Nivel01.unity
@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel03.unity
     guid: 4bbd5b09f41af194fbcefc35c98798fd
+  - enabled: 1
+    path: "Assets/Scenes/7.Cr\xE9ditos.unity"
+    guid: dcdd707970755fa43ad643ec5bca31a7
+  - enabled: 1
+    path: Assets/Scenes/5.Continuar partida.unity
+    guid: bd13930c3ab612d4dbc12436086698cf
   m_configObjects: {}
