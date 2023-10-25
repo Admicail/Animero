@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: f5588807ac996a64a92697cb6d94ce90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8014002104044287687
+    second: 2piso_0
+  - first:
+      213: -3408248899595326561
+    second: 2piso_1
+  - first:
+      213: 2320262578126928234
+    second: 2piso_2
+  - first:
+      213: -8412716375685027310
+    second: 2piso_3
+  - first:
+      213: 6527428621198154485
+    second: 2piso_4
+  - first:
+      213: -9087048245581346957
+    second: 2piso_5
+  - first:
+      213: 8696700980852442485
+    second: 2piso_6
+  - first:
+      213: -7910680367756003895
+    second: 2piso_7
+  - first:
+      213: 536819435554008712
+    second: 2piso_8
+  - first:
+      213: 637135819858303870
+    second: 2piso_9
+  - first:
+      213: 6268586520371607357
+    second: 2piso_10
+  - first:
+      213: -3236839320551352345
+    second: 2piso_11
+  - first:
+      213: -9071076624833194743
+    second: 2piso_12
+  - first:
+      213: 2022044534202644190
+    second: 2piso_13
+  - first:
+      213: -4160545501622535865
+    second: 2piso_14
+  - first:
+      213: 2640425920831366006
+    second: 2piso_15
+  - first:
+      213: -8908977701443307130
+    second: 2piso_16
+  - first:
+      213: -1464828240011165078
+    second: 2piso_17
+  - first:
+      213: -7549210640242624271
+    second: 2piso_18
+  - first:
+      213: 4816489351770470747
+    second: 2piso_19
+  - first:
+      213: -5335178917041414687
+    second: 2piso_20
+  - first:
+      213: 3698323703044024269
+    second: 2piso_21
+  - first:
+      213: -6067656602625715551
+    second: 2piso_22
+  - first:
+      213: 5609819838619613662
+    second: 2piso_23
+  - first:
+      213: -1637824536192293445
+    second: 2piso_24
+  - first:
+      213: 7507504420246210829
+    second: 2piso_25
+  - first:
+      213: -40118032733812633
+    second: 2piso_26
+  - first:
+      213: 3134055756810420083
+    second: 2piso_27
+  - first:
+      213: -7466607552917501436
+    second: 2piso_28
+  - first:
+      213: 7293820434090135055
+    second: 2piso_29
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 1
+  spritePivot: {x: 0, y: 1}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2piso_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6fac02474773f60800000000000000
+      internalID: 8014002104044287687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

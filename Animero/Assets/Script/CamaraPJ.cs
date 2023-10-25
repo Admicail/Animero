@@ -7,6 +7,7 @@ public class CamaraPJ : MonoBehaviour
     public GameObject Jugador;
     public float Adelante;
     public float Suavizado;
+    public float Subir;
     private Vector3 JugadorPost;
 
 
@@ -23,11 +24,11 @@ public class CamaraPJ : MonoBehaviour
 
         if (Jugador.transform.localScale.x == 1) //Derecha
         {
-            JugadorPost = new Vector3(JugadorPost.x + Adelante, JugadorPost.y, transform.position.z);
+            JugadorPost = new Vector3(JugadorPost.x + Adelante, JugadorPost.y + Subir, transform.position.z);
         }
-        else if (Jugador.transform.localScale.x == 1) // Izquierda
+        else if (Jugador.transform.localScale.x == -1) // Izquierda
         {
-            JugadorPost = new Vector3(JugadorPost.x - Adelante, JugadorPost.y, transform.position.z);
+            JugadorPost = new Vector3(JugadorPost.x - Adelante, JugadorPost.y + Subir, transform.position.z);
         }
         transform.position = Vector3.Lerp(transform.position, JugadorPost, Suavizado * Time.deltaTime);
     }
