@@ -25,6 +25,7 @@ public class Personaje : MonoBehaviour
     {
         ProcesarMovimiento();
         ProcesarSalto();
+        ComprobarSuelo();
     }
 
     void ProcesarMovimiento()
@@ -54,9 +55,10 @@ public class Personaje : MonoBehaviour
 
     void ProcesarSalto()
     {
+        animator.SetFloat("jumpUp", rigidbody.velocity.y);
+
         if (Input.GetKeyDown(KeyCode.Space) && EstarEnSuelo())
         {
-            animator.SetTrigger("isJump");
             rigidbody.velocity = new Vector2(rigidbody.velocity.x , 0f);
             rigidbody.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
         }
@@ -66,4 +68,16 @@ public class Personaje : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.01f, capaSuelo);
         return raycastHit.collider != null;
     }
+    void ComprobarSuelo()
+    {
+        if (boxCollider.IsTouchingLayers(capaSuelo))
+        {
+            animator.SetBool("isJumpDown", true);
+        }
+        else
+        {
+            animator.SetBool("isJumpDown", false);
+        }
+    }
+
 }

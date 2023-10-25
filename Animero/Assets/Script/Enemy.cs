@@ -4,18 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //public int LifeTotal = 3;
-    //public int enemySpeed = 20;
-    //public Rigidbody rb;
 
-    //void Start()
-    //{
-    //    rb = GetComponent<Rigidbody>();
-    //}
-    //void Update()
-    //{
-    //    rb.velocity = transform.right * enemySpeed;   
-    //}
     [SerializeField] List<Transform> wayPoints = null;
     public float velocidad;
     public float distanciaCambio;
