@@ -6,11 +6,17 @@ public class Personaje : MonoBehaviour
 {
     public float velocidad;
     public float fuerzaSalto;
+    public float fuerzaGolpe;
     public LayerMask capaSuelo;
+    public AudioClip audioSalto;
+
+
+
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
     private bool mirarDerecha = true;
     private Animator animator;
+    private bool puedeMoverse = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +32,12 @@ public class Personaje : MonoBehaviour
         ProcesarMovimiento();
         ProcesarSalto();
         ComprobarSuelo();
+        ComprobarAtaque();
     }
 
     void ProcesarMovimiento()
     {
+        if (!puedeMoverse) { return; }
         float inputMovimiento = Input.GetAxis("Horizontal");
         if (inputMovimiento != 0f)
         {
@@ -55,12 +63,14 @@ public class Personaje : MonoBehaviour
 
     void ProcesarSalto()
     {
-        animator.SetFloat("jumpUp", rigidbody.velocity.y);
+        animator.SetFloat("isJump", rigidbody.velocity.y);
 
         if (Input.GetKeyDown(KeyCode.Space) && EstarEnSuelo())
         {
+            AudioManager.Instance.ReproducirSonido(audioSalto);
             rigidbody.velocity = new Vector2(rigidbody.velocity.x , 0f);
             rigidbody.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+            
         }
     }
     bool EstarEnSuelo()
@@ -72,12 +82,50 @@ public class Personaje : MonoBehaviour
     {
         if (boxCollider.IsTouchingLayers(capaSuelo))
         {
-            animator.SetBool("isJumpDown", true);
+            animator.SetBool("isFall", true);
         }
         else
         {
-            animator.SetBool("isJumpDown", false);
+            animator.SetBool("isFall", false);
         }
+    }
+
+    void ComprobarAtaque()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            animator.SetBool("isAttack", true);
+        }
+        else
+        {
+            animator.SetBool("isAttack", false);
+        }
+    }
+
+    public void RecibirGolpe()
+    {
+        puedeMoverse = false;
+        Vector2 direccionGolpe;
+        if (rigidbody.velocity.x > 0)
+        {
+            direccionGolpe = new Vector2(-1, 1);
+        }
+        else
+        {
+            direccionGolpe = new Vector2(1, -1);
+        }
+        rigidbody.AddForce(direccionGolpe * fuerzaGolpe);
+        StartCoroutine(EsperarYActivarMover());
+    }
+
+    IEnumerator EsperarYActivarMover()
+    {
+        yield return new WaitForSeconds(0.1f);
+        while (!EstarEnSuelo())
+        {
+            yield return null;
+        }
+        puedeMoverse = true;
     }
 
 }

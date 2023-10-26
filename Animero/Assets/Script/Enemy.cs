@@ -28,4 +28,13 @@ public class Enemy : MonoBehaviour
                 siguientePosicion = 0;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        { 
+            GameCoins.Instance.PerderVida();
+
+            collision.gameObject.GetComponent<Personaje>().RecibirGolpe();
+        }
+    }
 }

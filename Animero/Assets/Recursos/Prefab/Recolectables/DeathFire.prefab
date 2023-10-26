@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valor: 1
   gamePoints: {fileID: 0}
+  sonidoFuego: {fileID: 8300000, guid: d68190fdb76947a4b866724a5550f3a5, type: 3}

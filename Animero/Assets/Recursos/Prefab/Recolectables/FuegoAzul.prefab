@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valor: 5
   gamePoints: {fileID: 0}
+  sonidoFuego: {fileID: 8300000, guid: d68190fdb76947a4b866724a5550f3a5, type: 3}
 --- !u!61 &4745219243294318114
 BoxCollider2D:
   m_ObjectHideFlags: 0
