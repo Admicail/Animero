@@ -11,8 +11,6 @@ public class Personaje : MonoBehaviour
     public AudioClip audioSalto;
     public float tocarSueloDistancia;
 
-
-
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
     private bool mirarDerecha = true;
@@ -128,5 +126,4 @@ public class Personaje : MonoBehaviour
         }
         puedeMoverse = true;
     }
-
 }
