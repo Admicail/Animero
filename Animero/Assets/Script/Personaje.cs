@@ -70,13 +70,13 @@ public class Personaje : MonoBehaviour
             AudioManager.Instance.ReproducirSonido(audioSalto);
             rigidbody.velocity = new Vector2(rigidbody.velocity.x , 0f);
             rigidbody.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
-            
         }
     }
     bool EstarEnSuelo()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.01f, capaSuelo);
         return raycastHit.collider != null;
+        
     }
     void ComprobarSuelo()
     {
@@ -92,11 +92,11 @@ public class Personaje : MonoBehaviour
 
     void ComprobarAtaque()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && boxCollider.IsTouchingLayers(capaSuelo))
         {
             animator.SetBool("isAttack", true);
         }
-        else
+        else if (Input.GetKeyUp(KeyCode.Z))
         {
             animator.SetBool("isAttack", false);
         }
