@@ -955,6 +955,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   audioSalto: {fileID: 0}
+  tocarSueloDistancia: 0.1
 --- !u!50 &830630796
 Rigidbody2D:
   serializedVersion: 4

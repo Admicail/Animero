@@ -173,3 +173,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   audioSalto: {fileID: 8300000, guid: a1bf009cb0ff1724bb44f0737631ac4b, type: 3}
+  tocarSueloDistancia: 0.1

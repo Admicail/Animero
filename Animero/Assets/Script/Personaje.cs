@@ -9,6 +9,7 @@ public class Personaje : MonoBehaviour
     public float fuerzaGolpe;
     public LayerMask capaSuelo;
     public AudioClip audioSalto;
+    public float tocarSueloDistancia;
 
 
 
@@ -74,7 +75,7 @@ public class Personaje : MonoBehaviour
     }
     bool EstarEnSuelo()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.01f, capaSuelo);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, tocarSueloDistancia, capaSuelo);
         return raycastHit.collider != null;
         
     }
