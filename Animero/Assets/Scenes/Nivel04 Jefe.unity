@@ -625,7 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514467164}
   - component: {fileID: 514467163}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Escenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,6 +670,9 @@ GameObject:
   - component: {fileID: 617529007}
   - component: {fileID: 617529006}
   - component: {fileID: 617529005}
+  - component: {fileID: 617529010}
+  - component: {fileID: 617529009}
+  - component: {fileID: 617529008}
   m_Layer: 0
   m_Name: NightBorne_0
   m_TagString: Untagged
@@ -763,6 +766,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.619}
+--- !u!50 &617529008
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617529004}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 4da7e0d84d89ea2458162bbd99f0a535, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &617529009
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617529004}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 4da7e0d84d89ea2458162bbd99f0a535, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.105430216, y: 0.99075115}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 2.5, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1258848, y: 0.995677}
+  m_EdgeRadius: 0
+--- !u!114 &617529010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617529004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3550d6b434d444e9b17a5227413c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 4
 --- !u!1 &1101375914
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +884,7 @@ GameObject:
   - component: {fileID: 1335052292}
   - component: {fileID: 1335052291}
   - component: {fileID: 1335052290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1392,11 +1455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 53652428434822468, guid: 528610fc85a89604fac60691e42fbb3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8265299
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 53652428434822468, guid: 528610fc85a89604fac60691e42fbb3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1001527
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 53652428434822468, guid: 528610fc85a89604fac60691e42fbb3e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1433,6 +1496,10 @@ PrefabInstance:
     - target: {fileID: 53652428434822489, guid: 528610fc85a89604fac60691e42fbb3e, type: 3}
       propertyPath: capaSuelo.m_Bits
       value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 53652428434822489, guid: 528610fc85a89604fac60691e42fbb3e, type: 3}
+      propertyPath: tocarSueloDistancia
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 53652428434822490, guid: 528610fc85a89604fac60691e42fbb3e, type: 3}
       propertyPath: m_Name
@@ -1538,7 +1605,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cba5446c74006c445a1484d337975fc5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.55
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
