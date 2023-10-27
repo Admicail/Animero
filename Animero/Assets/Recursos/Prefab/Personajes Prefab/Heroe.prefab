@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53652428434822490}
-  m_LocalRotation: {x: -0, y: -0, z: 0.008726558, w: 0.999962}
+  m_LocalRotation: {x: 0, y: 0, z: 0.008726558, w: 0.999962}
   m_LocalPosition: {x: -8.06, y: -1.65, z: 90}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -167,10 +167,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 4
-  fuerzaSalto: 6.5
+  fuerzaSalto: 7
   fuerzaGolpe: 100
   capaSuelo:
     serializedVersion: 2
     m_Bits: 128
   audioSalto: {fileID: 8300000, guid: a1bf009cb0ff1724bb44f0737631ac4b, type: 3}
-  tocarSueloDistancia: 0.1
+  tocarSueloDistancia: 2
