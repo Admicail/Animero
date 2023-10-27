@@ -91,11 +91,11 @@ public class Personaje : MonoBehaviour
 
     void ComprobarAtaque()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && boxCollider.IsTouchingLayers(capaSuelo))
+        if (Input.GetButtonDown("Fire1"))
         {
             animator.SetBool("isAttack", true);
         }
-        else if (Input.GetKeyUp(KeyCode.Z))
+        else
         {
             animator.SetBool("isAttack", false);
         }

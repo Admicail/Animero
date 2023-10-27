@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Enemy
   - Muro
+  - Espada
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Fondo

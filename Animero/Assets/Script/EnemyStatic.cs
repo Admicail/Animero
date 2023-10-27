@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyStatic : MonoBehaviour
 {
+    public int vidas;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +23,18 @@ public class EnemyStatic : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameCoins.Instance.PerderVida();
-
             collision.gameObject.GetComponent<Personaje>().RecibirGolpe();
+            Debug.Log("No pego");
+        }
+        else if (collision.gameObject.CompareTag("Espada"))
+        {
+            vidas -= 1;
+            if (vidas == 0)
+            {
+                Destroy(this.gameObject);
+            }
+            Debug.Log("Pego");
         }
     }
-    
+
 }
