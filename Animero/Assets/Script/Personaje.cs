@@ -64,7 +64,7 @@ public class Personaje : MonoBehaviour
     {
         animator.SetFloat("isJump", rigidbody.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space) && EstarEnSuelo())
+        if (((Input.GetKeyDown(KeyCode.Space)) || (Input.GetKeyDown(KeyCode.UpArrow))) && EstarEnSuelo())
         {
             AudioManager.Instance.ReproducirSonido(audioSalto);
             rigidbody.velocity = new Vector2(rigidbody.velocity.x , 0f);
