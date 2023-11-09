@@ -10,6 +10,8 @@ public class Personaje : MonoBehaviour
     public LayerMask capaSuelo;
     public AudioClip audioSalto;
     public float tocarSueloDistancia;
+    public GameObject Bala;
+    public float TimerBala, TiempoDeEspera;
 
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
@@ -32,6 +34,21 @@ public class Personaje : MonoBehaviour
         ProcesarSalto();
         ComprobarSuelo();
         ComprobarAtaque();
+
+        if (Input.GetKey("x") && TimerBala <= 0)
+        {
+            if (transform.localScale.x == -1)
+            {
+                Instantiate(Bala, transform.position, Quaternion.Euler(0, 180, 0));
+            }
+            else
+            {
+                Instantiate(Bala, transform.position, Quaternion.Euler(0, 0, 0));
+
+            }
+            TimerBala = TiempoDeEspera;
+        }
+        TimerBala -= Time.deltaTime;
     }
 
     void ProcesarMovimiento()

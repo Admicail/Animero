@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public float velocidad;
     public float distanciaCambio;
     byte siguientePosicion = 0;
+    public int vidas;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,14 @@ public class Enemy : MonoBehaviour
             GameCoins.Instance.PerderVida();
 
             collision.gameObject.GetComponent<Personaje>().RecibirGolpe();
+        }
+        else if (collision.gameObject.CompareTag("Espada"))
+        {
+            vidas -= 1;
+            if (vidas == 0)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }

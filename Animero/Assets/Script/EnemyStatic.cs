@@ -24,7 +24,6 @@ public class EnemyStatic : MonoBehaviour
         {
             GameCoins.Instance.PerderVida();
             collision.gameObject.GetComponent<Personaje>().RecibirGolpe();
-            Debug.Log("No pego");
         }
         else if (collision.gameObject.CompareTag("Espada"))
         {
@@ -33,7 +32,6 @@ public class EnemyStatic : MonoBehaviour
             {
                 Destroy(this.gameObject);
             }
-            Debug.Log("Pego");
         }
     }
 
