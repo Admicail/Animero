@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CambioScena : MonoBehaviour
 {
+    public int escena;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class CambioScena : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(escena);
         }
     }
 }

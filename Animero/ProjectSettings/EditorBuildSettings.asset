@@ -38,4 +38,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel04 Jefe.unity
     guid: 9a1df5dd6ea749d449b0da4763f5dc07
+  - enabled: 1
+    path: Assets/Scenes/VIDEO NV 1.unity
+    guid: e71d2b80c49bff0418ef9b0a84614f61
+  - enabled: 1
+    path: Assets/Scenes/VIDEO NV 2.unity
+    guid: c1b0bfaff5033934db609573a3acd4a2
+  - enabled: 1
+    path: Assets/Scenes/VIDEO NV 3.unity
+    guid: 1e1821ae42239a14b93d592252cbc33c
   m_configObjects: {}
