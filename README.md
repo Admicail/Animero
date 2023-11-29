@@ -1,2 +1,3 @@
-# UnityReto
-Reto Todos a la U, Animero
+# Animero  
+Videojuego en 2D
+
